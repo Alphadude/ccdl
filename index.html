@@ -11,11 +11,17 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="img/xfavicon.png.pagespeed.ic.xjuSQ5i6l5.png">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
 
     <link rel="stylesheet"
         href="css/begin.css" />
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/A.style.css.pagespeed.cf.D2wU09WNeF.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script
         nonce="8d72f91e-1b2d-4695-a9f9-b5448c705e7c">(function (w, d) { !function (a, e, t, r) { a.zarazData = a.zarazData || {}, a.zarazData.executed = [], a.zaraz = { deferred: [] }, a.zaraz.q = [], a.zaraz._f = function (e) { return function () { var t = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: t }) } }; for (const e of ["track", "set", "ecommerce", "debug"]) a.zaraz[e] = a.zaraz._f(e); a.zaraz.init = () => { var t = e.getElementsByTagName(r)[0], z = e.createElement(r), n = e.getElementsByTagName("title")[0]; for (n && (a.zarazData.t = e.getElementsByTagName("title")[0].text), a.zarazData.x = Math.random(), a.zarazData.w = a.screen.width, a.zarazData.h = a.screen.height, a.zarazData.j = a.innerHeight, a.zarazData.e = a.innerWidth, a.zarazData.l = a.location.href, a.zarazData.r = e.referrer, a.zarazData.k = a.screen.colorDepth, a.zarazData.n = e.characterSet, a.zarazData.o = (new Date).getTimezoneOffset(), a.zarazData.q = []; a.zaraz.q.length;) { const e = a.zaraz.q.shift(); a.zarazData.q.push(e) } z.defer = !0; for (const e of [localStorage, sessionStorage]) Object.keys(e || {}).filter((a => a.startsWith("_zaraz_"))).forEach((t => { try { a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t)) } catch { a.zarazData["z_" + t.slice(7)] = e.getItem(t) } })); z.referrerPolicy = "origin", z.src = "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))), t.parentNode.insertBefore(z, t) }, ["complete", "interactive"].includes(e.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, 0, "script"); })(window, document);</script>
@@ -119,11 +125,24 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-10 offset-xl-1">
-                        <div class="slider_text text-center justify-content-center">
-                            <h3>Welcome to CCDL Group</h3>
-                            <p>Simplified, Rewarding and secure.</p>
+                        <div class="slider_text text-center justify-content-center carousel slide" id="carouselExampleSlidesOnly" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h3 data-animation="bounceIn" data-delay="0.2s">Welcome to CCDL Group</h3>
+                                    <p data-animation="fadeInUp" data-delay="0.4s">We're in a mission to provide ethical and creative solutions towards solving the housing challenges for individual, corporate and governmental housing needs.</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h3 data-animation="bounceIn" data-delay="0.2s">New Homes Like No Other</h3>
+                                    <p data-animation="fadeInUp" data-delay="0.4s">When you walk into a Landwey home, you’ll know that everything we do is designed around you. Our homes regularly achieve recognition for their design excellence, build quality and customer satisfaction.</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h3 data-animation="bounceIn" data-delay="0.2s">Simplified, Rewarding and Secure</h3>
+                                    <p data-animation="fadeInUp" data-delay="0.4s">We make real estate investments accessible to everyone in a way that is simple, secure and profitable. We achieve this by practicing excellence, continually innovating, conducting business with integrity and always putting our customers first.</p>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <div class="property_form">
+                        <!-- <div class="property_form">
                             <form action="#">
                                 <div class="row">
                                     <div class="col-xl-12">
@@ -173,7 +192,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -186,7 +205,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title mb-40 text-center">
-                        <h3>Popular Properties</h3>
+                        <h3>Latest Properties</h3>
                     </div>
                 </div>
             </div>
@@ -201,12 +220,12 @@
                         </div>
                         <div class="property_content">
                             <div class="main_pro">
-                                <h3><a href="property_details.html">Comfortable Apartment in Palace</a></h3>
+                                <h3><a href="property_details.html">OAKWOOD CITY ESTATE UYO. (30 FOR 30 PROMO ONLY)</a></h3>
                                 <div class="mark_pro">
                                     <img src="img/svg_icon/location.svg" alt="">
                                     <span>Popular Properties</span>
                                 </div>
-                                <span class="amount">From $20k</span>
+                                <span class="amount">₦30,000</span>
                             </div>
                         </div>
                         <div class="footer_pro">
@@ -236,19 +255,19 @@
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_property">
                         <div class="property_thumb">
-                            <div class="property_tag red">
-                                For Rent
+                            <div class="property_tag">
+                                For Sale
                             </div>
                             <img src="img/rosewood asaba.jpeg" alt="">
                         </div>
                         <div class="property_content">
                             <div class="main_pro">
-                                <h3><a href="property_details.html">Comfortable Apartment in Palace</a></h3>
+                                <h3><a href="property_details.html">ROSEWOOD ESTATE. ASABA, DELTA STATE. 30/30 PROMO</a></h3>
                                 <div class="mark_pro">
                                     <img src="img/svg_icon/location.svg" alt="">
                                     <span>Popular Properties</span>
                                 </div>
-                                <span class="amount">$563/month</span>
+                                <span class="amount">₦900,000</span>
                             </div>
                         </div>
                         <div class="footer_pro">
@@ -285,12 +304,12 @@
                         </div>
                         <div class="property_content">
                             <div class="main_pro">
-                                <h3><a href="property_details.html">Comfortable Apartment in Palace</a></h3>
+                                <h3><a href="property_details.html">SUNSHINE CITY ESTATE BENIN (30 FOR 30 SPECIAL PROMO ONLY)</a></h3>
                                 <div class="mark_pro">
                                     <img src="img/svg_icon/location.svg" alt="">
                                     <span>Popular Properties</span>
                                 </div>
-                                <span class="amount">From $20k</span>
+                                <span class="amount">₦900,000</span>
                             </div>
                         </div>
                         <div class="footer_pro">
@@ -320,19 +339,19 @@
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_property">
                         <div class="property_thumb">
-                            <div class="property_tag red">
-                                For Rent
+                            <div class="property_tag">
+                                For Sale
                             </div>
                             <img src="img/sunshine estate lag.jpeg" alt="">
                         </div>
                         <div class="property_content">
                             <div class="main_pro">
-                                <h3><a href="property_details.html">Comfortable Apartment in Palace</a></h3>
+                                <h3><a href="property_details.html">SUNSHINE CITY ESTATE LAGOS (30 FOR 30 SPECIAL PROMO ONLY)</a></h3>
                                 <div class="mark_pro">
                                     <img src="img/svg_icon/location.svg" alt="">
                                     <span>Popular Properties</span>
                                 </div>
-                                <span class="amount">$563/month</span>
+                                <span class="amount">₦900,000</span>
                             </div>
                         </div>
                         <div class="footer_pro">
@@ -369,12 +388,12 @@
                         </div>
                         <div class="property_content">
                             <div class="main_pro">
-                                <h3><a href="property_details.html">Comfortable Apartment in Palace</a></h3>
+                                <h3><a href="property_details.html">SUNSHINE CITY ESTATE OZUAKU (30 FOR 30 SPECIAL PROMO ONLY)</a></h3>
                                 <div class="mark_pro">
                                     <img src="img/svg_icon/location.svg" alt="">
                                     <span>Popular Properties</span>
                                 </div>
-                                <span class="amount">From $20k</span>
+                                <span class="amount">₦900,000</span>
                             </div>
                         </div>
                         <div class="footer_pro">
@@ -411,12 +430,12 @@
                         </div>
                         <div class="property_content">
                             <div class="main_pro">
-                                <h3><a href="property_details.html">Comfortable Apartment in Palace</a></h3>
+                                <h3><a href="property_details.html">SUNSHINE CITY ESTATE LAGOS (30 FOR 30 SPECIAL PROMO ONLY)</a></h3>
                                 <div class="mark_pro">
                                     <img src="img/svg_icon/location.svg" alt="">
                                     <span>Popular Properties</span>
                                 </div>
-                                <span class="amount">From $20k</span>
+                                <span class="amount">₦900,000</span>
                             </div>
                         </div>
                         <div class="footer_pro">
@@ -487,7 +506,7 @@
                                                 <p>A beautiful Estate with a very serene environment with the following attarctive features</p>
                                                 <div
                                                     class="prise_view_details d-flex justify-content-between align-items-center">
-                                                    <span>$4567</span>
+                                                    <span>₦30,000</span>
                                                     <a class="boxed-btn3-line" href="property_details.html">View Details</a>
                                                 </div>
                                             </div>
@@ -523,7 +542,7 @@
                                                 <p>A beautiful Estate with a very serene environment with the following attarctive features.</p>
                                                 <div
                                                     class="prise_view_details d-flex justify-content-between align-items-center">
-                                                    <span>$4567</span>
+                                                    <span>₦10,000,000</span>
                                                     <a class="boxed-btn3-line" href="property_details.html">View Details</a>
                                                 </div>
                                             </div>
@@ -559,7 +578,7 @@
                                                 <p>A beautiful Estate with a very serene environment with the following attarctive features</p>
                                                 <div
                                                     class="prise_view_details d-flex justify-content-between align-items-center">
-                                                    <span>$4567</span>
+                                                    <span>₦700,000</span>
                                                     <a class="boxed-btn3-line" href="#">View Details</a>
                                                 </div>
                                             </div>
@@ -595,7 +614,7 @@
                                                 <p>A beautiful Estate with a very serene environment with the following attarctive features</p>
                                                 <div
                                                     class="prise_view_details d-flex justify-content-between align-items-center">
-                                                    <span>$4567</span>
+                                                    <span>₦900,000</span>
                                                     <a class="boxed-btn3-line" href="#">View Details</a>
                                                 </div>
                                             </div>
@@ -631,7 +650,7 @@
                                                 <p>A beautiful Estate with a very serene environment with the following attarctive features.</p>
                                                 <div
                                                     class="prise_view_details d-flex justify-content-between align-items-center">
-                                                    <span>$4567</span>
+                                                    <span>₦900,000 </span>
                                                     <a class="boxed-btn3-line" href="#">View Details</a>
                                                 </div>
                                             </div>
